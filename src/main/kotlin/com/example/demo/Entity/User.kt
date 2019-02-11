@@ -9,6 +9,4 @@ import javax.persistence.Id
 @Entity
 data class User(@Id
                 @GeneratedValue(strategy = GenerationType.AUTO)
-                val id: Int = 0, val name: String, val email: String) {
-
-}
+                val id: Int = 0, var name: String, var email: String)
